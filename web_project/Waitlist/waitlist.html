@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Waitlist</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f6f9;
+    }
+
+    header {
+      background-color: #007BFF;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    section {
+      background: white;
+      margin: 40px auto 0 auto;
+      padding: 25px;
+      max-width: 500px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #007BFF;
+      margin-top: 0;
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    button, .link-button {
+      margin-top: 15px;
+      padding: 10px;
+      width: 100%;
+      background: green;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+    }
+    
+
+    button:hover, .link-button:hover {
+      background: darkgreen;
+    }
+
+    .checkbox-container {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+      margin-bottom: 15px;
+    }
+
+    .checkbox-container input {
+      margin-right: 8px;
+      width: auto;
+    }
+
+    .checkbox-container label {
+      margin: 0;
+      font-weight: normal;
+    }
+
+    .message {
+      margin-top: 10px;
+      font-size: 14px;
+      padding: 8px;
+      border-radius: 5px;
+    }
+
+    .error {
+      background: #ffe5e5;
+      color: red;
+      border: 1px solid red;
+    }
+
+    .success {
+      background: #e5ffe5;
+      color: green;
+      border: 1px solid green;
+    }
+
+    .top-button {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .top-button a {
+      display: inline-block;
+      width: 100%;
+      background: #007BFF;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .top-button a:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Event Waitlist</h1>
+  </header>
+
+  <!-- Refund Policy Link -->
+  <div class="top-button">
+    <a href="../refund/refund.html" style="text-align: center;">View Refund Policy</a>
+  </div>
+
+  <!--<section>-->
+    <h2>Join Waitlist</h2>
+    <form id="waitlistForm">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+
+      <label for="priority">Priority:</label>
+      <select id="priority" name="priority">
+        <option value="">-- Select Priority --</option>
+        <option value="VIP">VIP</option>
+        <option value="Regular">Regular</option>
+        <option value="Student">Student</option>
+      </select>
+
+      <div class="checkbox-container">
+        <input type="checkbox" id="notify" name="notify">
+        <label for="notify">Notify me about availability</label>
+      </div>
+
+      <button type="submit">Join List</button>
+
+      <div id="message"></div>
+    </form>
+  <!--</section>-->
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("bg.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Container for the form */
+.container {
+  
+  padding: 30px;
+  border-radius: 8px;
+  width: 350px;
+}
+
+/* Header */
+h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* Form labels */
+label {
+  color: #0ad84f; 
+  display: block;
+  margin-top: 15px;
+  font-size: 150%;
+  font-weight: bold;
+}
+
+/* Form inputs */
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Submit button */
+button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: wheat;
+}
+
+/* Message div */
+.message {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: red;
+}
+
+/* Links */
+.link {
+  margin-top: 10px;
+  text-align: center;
+}
+.link h5
+{
+ color: #dcdfe1ca;
+ font-size: 120%;
+}
+
+.link a {
+  text-decoration: none;
+  color: #00ff40;
+  display: block;
+  margin: 5px 0;
+}
+
+.link a:hover {
+  text-decoration: underline;
+}
